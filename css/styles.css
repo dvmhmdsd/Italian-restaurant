@@ -127,7 +127,7 @@ body {
 .owl-carousel {
   position: relative;
 }
-
+/* style the navigator buttons */
 .owl-carousel .owl-nav {
   width: 100%;
   font-size: 55px;
@@ -150,4 +150,24 @@ body {
 
 .owl-carousel .owl-nav button.owl-next {
   float: right;
+}
+/* style the navigator dots */
+.owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+  background-color: rgba(225, 225, 225, 0.5);
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  outline: 0;
+  padding: 20px
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+  background-color: rgba(225, 225, 225, 1);
 }
