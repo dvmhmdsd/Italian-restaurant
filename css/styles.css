@@ -1,0 +1,67 @@
+@import "framework.css";
+@import "responsive.css";
+@import url("https://fonts.googleapis.com/css?family=Merienda&display=swap");
+
+/* style the body */
+body {
+  font-family: "Merienda", cursive;
+  font-size: var(--font-size);
+  color: var(--font-color);
+}
+
+/* styling the navbar */
+.navbar {
+  background-color: var(--back-color);
+  position: fixed;
+  padding: 5px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+/* make the layout */
+
+.navbar .nav-list-section {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navbar .nav-list,
+.navbar .collapse-btn {
+  margin-left: auto;
+}
+
+.navbar .nav-list .nav-list-item {
+  padding: 10px 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* style the logo */
+.navbar .nav-logo {
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+
+/* make the text in th middle of the image */
+.nav-logo img {
+  vertical-align: middle;
+}
+
+.navbar .nav-list .nav-list-item:hover a {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* change the style when the item is active */
+.navbar .nav-list .nav-list-item.active {
+    color: #000;
+    background-color: var(--back-heavy);
+}
+
+/* style the collapse button */
+.navbar .collapse-btn {
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
