@@ -25,4 +25,4 @@ collapseButton.addEventListener('click', function() {
             collapseList.classList.add('visible-bg');
         }, 300);
     }
-})
+});

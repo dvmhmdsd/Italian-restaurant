@@ -19,6 +19,7 @@ body {
   left: 0;
   display: flex;
   flex-wrap: wrap;
+  z-index: 999;
 }
 
 /* make the layout */
@@ -87,3 +88,66 @@ body {
 }
 
 /* ========================================================================================= */
+
+/* style the header of the website */
+
+#header .slide {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  color: #fff;
+}
+
+#header .slide h2 {
+  font-weight: normal;
+  font-size: 5vw;
+}
+
+@media (max-width: 600px) {
+  #header .slide h2 {
+    font-size: 7vw;
+  } 
+}
+
+#header .slide1 {
+  background-image: url('../assets/images/slider1.jpg');
+}
+
+#header .slide2 {
+  background-image: url('../assets/images/slider2.jpg');
+}
+
+#header .slide3 {
+  background-image: url('../assets/images/location.jpg');
+}
+
+/* style the slider */
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel .owl-nav {
+  width: 100%;
+  font-size: 55px;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  outline: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  float: left;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  float: right;
+}

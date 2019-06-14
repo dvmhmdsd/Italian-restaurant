@@ -3,6 +3,9 @@
   .hidden-bg {
     display: none;
   }
+  .navbar .nav-list-section {
+    display: flex;
+  }
 }
 
 /* make the div block in small screen */
@@ -18,11 +21,11 @@
 }
 
 /* visible in big divices only */
-.visible-bg {
+/* .visible-bg {
     display: none !important;
 }
 @media (min-width: 770px) {
   .visible-bg {
     display: flex !important;
   }
-}
+} */

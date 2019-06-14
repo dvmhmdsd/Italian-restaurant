@@ -17,25 +17,39 @@
       <!-- logo -->
       <h1 class="nav-logo">
         <a href="#">
-          <img src="assets/images/logo.png" width="50" height="50" alt="restaurant logo" />
+          <img
+            src="assets/images/logo.png"
+            width="50"
+            height="50"
+            alt="restaurant logo"
+          />
           Italian Restaurant
         </a>
       </h1>
 
       <!-- button to control the list -->
       <button class="collapse-btn hidden-bg">
-          <i class="fas fa-bars fa-lg"></i>
+        <i class="fas fa-bars fa-lg"></i>
       </button>
 
       <!-- the navbar list -->
       <div class="nav-list-section visible-bg">
-
         <ul class="nav-list">
-          <li class="nav-list-item"><a href="" class="nav-item-link">welcome</a></li>
-          <li class="nav-list-item"><a href="" class="nav-item-link">restaurant</a></li>
-          <li class="nav-list-item"><a href="" class="nav-item-link">menu</a></li>
-          <li class="nav-list-item"><a href="" class="nav-item-link">reservation</a></li>
-          <li class="nav-list-item"><a href="" class="nav-item-link">our location</a></li>
+          <li class="nav-list-item">
+            <a href="" class="nav-item-link">welcome</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="" class="nav-item-link">restaurant</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="" class="nav-item-link">menu</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="" class="nav-item-link">reservation</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="" class="nav-item-link">our location</a>
+          </li>
           <div class="clearfix"></div>
         </ul>
       </div>
@@ -43,9 +57,38 @@
       <div class="clearfix"></div>
     </nav>
 
+    <!-- ================================================================= -->
+
+    <!-- the header of the website -->
+    <header id="header">
+      <!-- make the slider -->
+      <article class="owl-carousel">
+        <!-- slide item -->
+        <section class="slide slide1">
+          <h2 class="slide-caption">Welcome!</h2>
+        </section>
+
+        <!-- slide item -->
+        <section class="slide slide2">
+          <h2 class="slide-caption">Lorem, ipsum!</h2>
+        </section>
+
+        <!-- slide item -->
+        <section class="slide slide3">
+          <h2 class="slide-caption">Lorem, ipsum dolor!</h2>
+        </section>
+        
+      </article>
+    </header>
+
     <!-- js files -->
     <script src="assets/js-lib/jquery-3.2.1.min.js"></script>
     <script src="assets/js-lib/owl.carousel.min.js"></script>
     <script src="js/main.js" defer></script>
+    <script>
+      $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({ items: 1, nav: true});
+      });
+    </script>
   </body>
 </html>
