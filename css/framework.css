@@ -16,7 +16,7 @@
 
 /* centering the content */
 .container {
-    width: 89%;
+    width: 86%;
     margin: auto;
 }
 
@@ -44,4 +44,27 @@ a {
 /* general styles for all sections */
 .section {
     padding-top: 60px;
+}
+
+.section > header {
+    margin-bottom: 20px;
+}
+
+/* reorder the items of the 'image with caption' section */
+@media (min-width: 800px) {
+    .img-right > section {
+        order: 1;
+    }
+    
+    .img-right .paragraph-image {
+        order: 2;
+    }
+    
+    .img-left > section {
+        order: 2;
+    }
+    
+    .img-left .paragraph-image {
+        order: 1;
+    }
 }

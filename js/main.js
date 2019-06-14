@@ -26,3 +26,6 @@ collapseButton.addEventListener('click', function() {
         }, 300);
     }
 });
+
+// scroll to elements on click on the link i navbar
+
