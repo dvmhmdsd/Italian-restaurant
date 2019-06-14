@@ -326,10 +326,13 @@ body {
 /* ======================================================================= */
 
 /* style the location section */
-#location {
-  
+#location .loc-grid {
+  display: flex;
 }
 
+#location #map {
+  flex-grow: 2;
+}
 
 /* style footer */
 footer .container {

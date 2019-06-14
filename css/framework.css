@@ -8,6 +8,10 @@
 }
 
 /* remove the default style of the layout of elements */
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
