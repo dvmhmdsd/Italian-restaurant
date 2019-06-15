@@ -57,13 +57,4 @@ window.addEventListener("scroll", function() {
       }
     });
   }
-
-  //   style the corresponding li on scrolling to a section
-  let sections = document.querySelectorAll(".section");
-
-  sections.forEach(section => {
-    if (window.pageYOffset == section.offsetTop) {
-      document.querySelector('li[data-id=' + section.id + ']').classList.add("active");
-    }
-  });
 });

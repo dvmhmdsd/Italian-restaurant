@@ -328,10 +328,22 @@ body {
 /* style the location section */
 #location .loc-grid {
   display: flex;
+  justify-content: space-between
 }
 
-#location #map {
+@media (max-width: 768px) {
+  #location .loc-grid {
+    flex-wrap: wrap;
+  }
+}
+
+#location .mapouter {
+  width: 100%;
   flex-grow: 2;
+}
+
+#location .mapouter iframe {
+  width: 100%;
 }
 
 /* style footer */
